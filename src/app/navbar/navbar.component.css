@@ -1,0 +1,27 @@
+.nav-section {
+  display: flex;
+  overflow: hidden;
+  position: relative;
+}
+
+.nav-links {
+  display: flex;
+  width: 100vw;
+  /* position: static; */
+}
+
+.nav-links li {
+  list-style: none;
+  position: relative;
+}
+
+.nav-links li a {
+  color: #17bebb;
+  display: block;
+  margin-top: 5px;
+  padding: 0 55px 0 55px;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 20px;
+}

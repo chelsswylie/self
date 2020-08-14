@@ -1,0 +1,26 @@
+header {
+  height: 10%;
+  width: 100%;
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  display: inline;
+  margin: 5px;
+}
+
+.first {
+  height: 15%;
+  width: 100%;
+  text-align: center;
+}
+
+.second {
+  height: 15%;
+  width: 100%;
+  text-align: center;
+}
