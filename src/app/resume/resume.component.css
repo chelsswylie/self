@@ -1,7 +1,11 @@
-header {
+/* header {
   height: 10%;
   width: 100%;
   text-align: center;
+}
+
+h1 {
+  font-family: "Ruthie", cursive;
 }
 
 ul {
@@ -11,8 +15,9 @@ ul {
 li {
   display: inline;
   margin: 5px;
-}
+} */
 
+/* Above removed and added to aboutMe */
 .first {
   height: 15%;
   width: 100%;

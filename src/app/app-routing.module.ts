@@ -5,7 +5,7 @@ import { CMUComponent } from './cmu/cmu.component';
 import { ResumeComponent } from './resume/resume.component';
 import { GrandCircusComponent } from './grand-circus/grand-circus.component';
 import { ReferencesComponent } from './references/references.component';
-import { WorkHistoryComponent } from './work-history/work-history.component';
+import { AboutMeComponent } from './about-me/about-me.component';
 
 const routerOptions: ExtraOptions = {
   scrollPositionRestoration: 'enabled',
@@ -14,11 +14,12 @@ const routerOptions: ExtraOptions = {
 };
 
 const routes: Routes = [
-  { path: '', component: ResumeComponent },
+  { path: '', component: AboutMeComponent },
+  { path: 'AboutMe', component: AboutMeComponent },
   { path: 'CMU', component: CMUComponent },
   { path: 'Grand Circus', component: GrandCircusComponent },
   { path: 'References', component: ReferencesComponent },
-  { path: 'Work History', component: WorkHistoryComponent },
+  { path: 'Resume', component: ResumeComponent },
 ];
 
 @NgModule({

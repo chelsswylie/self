@@ -5,10 +5,10 @@ import { AppComponent } from './app.component';
 import { ResumeComponent } from './resume/resume.component';
 import { GrandCircusComponent } from './grand-circus/grand-circus.component';
 import { ReferencesComponent } from './references/references.component';
-import { WorkHistoryComponent } from './work-history/work-history.component';
 import { CMUComponent } from './cmu/cmu.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { AppRoutingModule } from './app-routing.module';
+import { AboutMeComponent } from './about-me/about-me.component';
 
 @NgModule({
   declarations: [
@@ -16,15 +16,12 @@ import { AppRoutingModule } from './app-routing.module';
     ResumeComponent,
     GrandCircusComponent,
     ReferencesComponent,
-    WorkHistoryComponent,
     CMUComponent,
-    NavbarComponent
+    NavbarComponent,
+    AboutMeComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  imports: [BrowserModule, AppRoutingModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

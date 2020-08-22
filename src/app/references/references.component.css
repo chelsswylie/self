@@ -3,3 +3,9 @@ header {
   width: 100%;
   text-align: center;
 }
+
+.recs {
+  width: 100vw;
+  text-align: center;
+  height: 150px;
+}
