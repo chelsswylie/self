@@ -205,3 +205,11 @@ nav {
   margin: 0.5em auto 1em;
   background-color: #fff;
 }
+
+.techskillz {
+  background-color: #fff;
+  /* background-image: url(../../assets/stockphotowebdev.jpg) */
+  background-size: cover;
+  color: #303030;
+  text-align: center;
+}
