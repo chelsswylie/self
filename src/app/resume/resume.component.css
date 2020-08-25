@@ -21,11 +21,15 @@ li {
 .first {
   height: 15%;
   width: 100%;
-  text-align: center;
+  text-align: left;
 }
 
 .second {
   height: 15%;
   width: 100%;
-  text-align: center;
+  text-align: left;
+}
+
+ul {
+  list-style-type: none;
 }

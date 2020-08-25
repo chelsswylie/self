@@ -1,4 +1,4 @@
-header {
+/* header {
   height: 10%;
   width: 100%;
   text-align: center;
@@ -6,7 +6,7 @@ header {
 
 body {
   font-family: "PT Serif", serif;
-}
+} */
 
 ul {
   list-style-type: none;
@@ -15,4 +15,193 @@ ul {
 li {
   display: inline;
   margin: 5px;
+}
+
+header {
+  height: 50px;
+  width: 100vw;
+  text-align: center;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Custom properties, update for design */
+/* :root {
+  --ff-primary: "PT Serif", serif;
+  --fw-reg: 300;
+  --fw-bold: 900;
+
+  --clr-light: #fff;
+  --clr-dark: #303030;
+  --clr-accent: #16e0bd;
+
+  --sf-h1: 3rem;
+  --fs-h2: 2.25rem;
+  --fs-h3: 1.25rem;
+  --fs-body: 1rem;
+} */
+/* 
+@media (min-width: 800px) {
+  :root {
+    --fs-h1: 4.5;
+    --fs-h2: 3.75rem;
+    --fs-h3: 1.5rem;
+    --fs-body: 1.125rem;
+  }
+} */
+
+/* Section above not working */
+/* .logo {
+  width: 50vw;
+  text-align: center;
+  height: 150px;
+} */
+
+/* General styles */
+
+body {
+  background: #fff;
+  color: #303030;
+  margin: 0;
+  font-family: "PT Serif", serif;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+/* For all "sections" */
+section {
+  padding: 5em 2em;
+  width: 100vw;
+  /* position: relative;
+  z-index: 1; */
+}
+
+/* For all images */
+img {
+  display: block;
+  width: 400px;
+  max-width: 100%;
+}
+
+strong {
+  font-weight: 900;
+}
+/* Typography */
+h1,
+h2,
+h3 {
+  line-height: 1.1;
+  margin: 0;
+}
+
+h1 {
+  font-size: 4.5rem;
+}
+h2 {
+  font-size: 3.75rem;
+}
+h3 {
+  font-size: 1.125rem;
+}
+
+.section__title {
+  margin-bottom: 0.25em;
+}
+
+.section__title--intro {
+  font-weight: 300;
+}
+
+.section__title--intro strong {
+  display: block;
+}
+
+.section__subtitle {
+  margin: 0;
+  font-size: 1.125rem;
+  font-family: "PT Sans", sans-serif;
+}
+
+.section__subtitle--intro,
+.section__subtitle--my-resume {
+  background-color: #16e0bd;
+  margin-bottom: 1em;
+  padding: 0.25em 1em;
+}
+
+/* header */
+
+nav {
+  display: none;
+}
+/* Intro section */
+
+.intro {
+  position: relative;
+}
+
+@media (min-width: 600px) {
+  .intro {
+    display: grid;
+    width: min-content;
+    margin: 0 auto;
+    grid-template-areas:
+      "img title"
+      "img subtitle";
+    grid-template-columns: min-content max-content;
+  }
+
+  .intro__img {
+    grid-area: img;
+    min-width: 250px;
+    position: relative;
+    z-index: 2;
+  }
+
+  .section__subtitle--intro {
+    align-self: start;
+    grid-column: -1/1;
+    grid-row: 2;
+    text-align: left;
+    /* position: absolute;
+    z-index: -1; */
+    position: relative;
+    left: -1.5em;
+    width: calc(100% + 1.5em);
+    /* display: flex;
+    justify-content: space-around; */
+  }
+}
+
+/* My Services section */
+
+.my-resume {
+  background-color: #303030;
+  /* background-image: url(../../assets/stockphotowebdev.jpg) */
+  background-size: cover;
+  color: #fff;
+  text-align: center;
+}
+
+.section__subtitle--my-resume {
+  color: #16e0bd;
+  position: relative;
+}
+
+.service {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+}
+
+.section__subtitle--my-resume::after {
+  content: "";
+  display: block;
+  width: 25%;
+  height: 1px;
+  margin: 0.5em auto 1em;
+  background-color: #fff;
 }
