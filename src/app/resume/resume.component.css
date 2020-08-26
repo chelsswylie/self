@@ -1,35 +1,36 @@
-/* header {
-  height: 10%;
-  width: 100%;
+body {
+  width: 75vw;
   text-align: center;
+  margin: auto;
 }
 
-h1 {
-  font-family: "Ruthie", cursive;
-}
-
-ul {
-  list-style-type: none;
-}
-
-li {
-  display: inline;
-  margin: 5px;
-} */
-
-/* Above removed and added to aboutMe */
 .first {
   height: 15%;
   width: 100%;
-  text-align: left;
+  text-align: center;
+  /* overflow: scroll; */
 }
 
 .second {
   height: 15%;
   width: 100%;
-  text-align: left;
+  text-align: center;
 }
 
 ul {
   list-style-type: none;
+}
+
+h1 {
+  height: 50px;
+  width: 75vw;
+  background-color: #16e0bd;
+}
+
+h3 {
+  height: 50px;
+  width: 100%;
+  background-color: #303030;
+  color: #fff;
+  font-weight: 200;
 }
