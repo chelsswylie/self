@@ -11,7 +11,7 @@
 
 .sidebar {
   /* width: 100%; */
-  height: 130%;
+  height: 150%;
   position: absolute;
   writing-mode: vertical-rl;
   text-orientation: mixed;
@@ -108,4 +108,11 @@ h3 {
 
 .line {
   text-decoration: overline;
+}
+
+@media screen and (max-width: 1000px) and (min-width: 100px) {
+  .sidebar {
+    height: 200%;
+    width: 13%;
+  }
 }
