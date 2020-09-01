@@ -1,23 +1,19 @@
-/* Need to add Media Query */
 /* Built design already based off of body, added outerbody to do z index with side bar */
 .outerbody {
   width: 100%;
   height: 100%;
   background-color: #fff;
-  /* border: 1px solid; */
-  /* margin-top: 0px; */
-  /* margin-right: 550px; */
 }
 
 .sidebar {
   /* width: 100%; */
-  height: 150%;
+  height: 50em;
   position: absolute;
   writing-mode: vertical-rl;
   text-orientation: mixed;
   z-index: 1;
   background-color: #16e0bd;
-  width: 10%;
+  width: 8%;
   font-size: 3em;
   margin-top: 1em;
   margin-left: 10%;
@@ -30,15 +26,15 @@
   padding-top: 4em;
 }
 #two {
-  padding-top: 4em;
+  padding-top: 2em;
 }
 
 body {
-  padding-top: 5%;
-  padding-bottom: 5%;
+  padding-top: 8%;
+  /* padding-bottom: 5%; */
   width: 50vw;
   text-align: center;
-  margin: auto;
+  /* margin: auto; */
   font-family: "PT Serif", serif;
   z-index: -1;
   height: 100%;
@@ -53,16 +49,18 @@ section {
 }
 .techskillz {
   background-color: #fff;
-  background-size: cover;
+  /* background-size: cover; */
   color: #303030;
   text-align: center;
   font-family: "PT Serif", serif;
-  /* box-sizing: border-box; */
+  box-sizing: border-box;
   display: block;
   /* font-size: 1rem; */
   /* line-height: 1; */
   /* position: relative; */
   border-top: 1px #303030 solid;
+  height: auto;
+  width: 100%;
 }
 
 .service {
@@ -97,22 +95,167 @@ h1 {
 }
 
 h3 {
-  height: 250pxpx;
   width: 100%;
-  /* background-color: #303030; */
   color: #303030;
-  /* font-weight: 200; */
   background-color: #fff;
-  /* text-decoration: underline #16e0bd; */
 }
 
 .line {
   text-decoration: overline;
 }
+/* 
+@media only screen and (max-width: 360px) {
+  .sidebar {
+    height: 300%;
+    width: auto;
+  }
 
-@media screen and (max-width: 1000px) and (min-width: 100px) {
+  h4 {
+    padding: 5%;
+  }
+  #one {
+    padding-top: 12em;
+  }
+  #two {
+    padding-top: 15em;
+  }
+
+  .techskillz {
+    margin-bottom: 50px;
+  }
+  body {
+    margin-left: 40%;
+  }
+} */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .sidebar {
+    height: 300%;
+    width: auto;
+  }
+
+  #one {
+    padding-top: 12em;
+  }
+  #two {
+    padding-top: 15em;
+  }
+
+  .techskillz {
+    margin-bottom: 50px;
+  }
+  body {
+    margin-left: 40%;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .sidebar {
+    height: 300%;
+    width: auto;
+  }
+
+  #one {
+    padding-top: 9em;
+  }
+  #two {
+    padding-top: 12em;
+  }
+
+  .techskillz {
+    margin-bottom: 50px;
+  }
+  body {
+    margin-left: 30%;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .sidebar {
+    height: 250%;
+    width: auto;
+  }
+
+  #one {
+    padding-top: 6em;
+  }
+  #two {
+    padding-top: 9em;
+  }
+
+  .techskillz {
+    margin-bottom: 50px;
+  }
+  body {
+    margin-left: 30%;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
   .sidebar {
     height: 200%;
-    width: 13%;
+    width: auto;
+  }
+
+  #one {
+    padding-top: 6em;
+  }
+  #two {
+    padding-top: 9em;
+  }
+
+  .techskillz {
+    margin-bottom: 50px;
+  }
+  /* body {
+    margin-left: 30%;
+  } */
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .sidebar {
+    height: 185%;
+    width: auto;
+  }
+
+  #one {
+    padding-top: 6em;
+  }
+  #two {
+    padding-top: 9em;
+  }
+
+  .techskillz {
+    margin-bottom: 50px;
+  }
+}
+
+@media only screen and (min-width: 1350px) {
+  .sidebar {
+    height: 185%;
+    width: auto;
+  }
+
+  #one {
+    padding-top: 6em;
+  }
+  #two {
+    padding-top: 6em;
+  }
+
+  .techskillz {
+    margin-bottom: 50px;
+  }
+}
+
+@media only screen and (min-width: 1500px) {
+  .sidebar {
+    height: 165%;
+    width: auto;
   }
 }

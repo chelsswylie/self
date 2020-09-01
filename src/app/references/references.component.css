@@ -15,7 +15,8 @@
   /* grid-area: menu; */
   /* margin-top: 500px; */
   border-radius: 25px;
-  background-color: #16e0bd;
+  background-color: #303030;
+  color: #fff;
 }
 .item6 {
   /* grid-area: main; */
@@ -25,7 +26,8 @@
 .item7 {
   /* grid-area: right; */
   border-radius: 25px;
-  background-color: #16e0bd;
+  background-color: #303030;
+  color: #fff;
 }
 
 img {
@@ -51,45 +53,3 @@ img {
   padding: 20px 0;
   font-size: 20px;
 }
-#Wendy {
-  width: 33.33%;
-  margin-top: 25em;
-}
-
-/* header {
-  height: 10%;
-  width: 100vw; */
-/* text-align: center;
-  color: #303030;
-}
-
-.recs { */
-/* display: flex; */
-/* display: grid;
-  grid-template-columns: auto auto auto;
-  background-color: #16e0bd; */
-/* padding: 10px; */
-/* flex-direction: row; */
-/* width: 100%;
-  height: 100%;
-} */
-
-/* img {
-  height: 100%;
-  width: 100%;
-} */
-
-/* .grid-item {
-  background-color: white; */
-/* border: 1px solid rgba(0, 0, 0, 0.8); */
-/* padding: 20px;
-  font-size: 30px;
-  text-align: center;
-} */
-/* #Gary {
-  width: 33.33%;
-}
-
-#Joy {
-  width: 33.33%;
-} */

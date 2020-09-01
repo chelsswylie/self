@@ -12,6 +12,7 @@ head {
   display: flex;
   width: 100vw;
   justify-content: center;
+  margin-left: 100px;
   /* position: static; */
 }
 
@@ -147,7 +148,7 @@ head {
 
 .hamburger__nav--wrapper nav a:hover {
   opacity: 1;
-  color: #ffc914;
+  color: #fff;
 }
 
 @media screen and (max-width: 1000px) and (min-width: 100px) {
