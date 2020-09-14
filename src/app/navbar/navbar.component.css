@@ -12,7 +12,7 @@ head {
   display: flex;
   width: 100vw;
   justify-content: center;
-  margin-left: 100px;
+  /* margin-left: 150px; */
   /* position: static; */
 }
 
@@ -151,7 +151,7 @@ head {
   color: #fff;
 }
 
-@media screen and (max-width: 1000px) and (min-width: 100px) {
+@media screen and (max-width: 2000px) and (min-width: 100px) {
   .mobile__menu {
     display: inherit;
   }

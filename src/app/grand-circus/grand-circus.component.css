@@ -1,5 +1,148 @@
-header {
-  height: 10%;
-  width: 100%;
+body {
+  width: 100vw;
   text-align: center;
+  margin: auto;
+  font-family: "PT Serif", serif;
+  height: 100%;
+  color: #303030;
+}
+
+.techskillz {
+  background-color: #fff;
+  text-align: center;
+  margin: auto;
+  font-family: "PT Serif", serif;
+  box-sizing: border-box;
+  display: block;
+  border-top: 1px #303030 solid;
+  height: 200px;
+  padding-top: 10px;
+  width: 50%;
+}
+
+.service {
+  float: left;
+  width: 33.33%;
+  padding-bottom: 50px;
+}
+
+/* Grand Circus Education */
+.first {
+  height: 400px;
+  border-top: 1px #303030 solid;
+  width: 50%;
+  margin: auto;
+  text-align: center;
+  /* padding-top: 5%; */
+  margin-bottom: 5%;
+}
+
+/* CMU Education */
+.second {
+  height: 200px;
+  width: 50%;
+  margin: auto;
+  text-align: center;
+  /* margin-top: 15%; */
+  padding-bottom: 5%;
+  border-top: 1px #303030 solid;
+}
+
+/* For sub-titles like Tech Skils, Education, Work Experience */
+h1 {
+  height: 50px;
+  color: #303030;
+  text-decoration: underline #16e0bd;
+  width: 50%;
+  margin: auto;
+  padding-top: 1%;
+  /* padding-bottom: 1%; */
+}
+
+.projects {
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+
+#InformaIntel {
+  width: 50%;
+  margin: auto;
+}
+
+/* Individual job titles in "work experience", colleges */
+h3 {
+  width: 50%;
+  margin: auto;
+  /* margin-top: 2%; */
+  color: #303030;
+  background-color: #fff;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+
+/* Centers job tasks list */
+li {
+  width: 50%;
+  margin: auto;
+  text-align: center;
+}
+
+/* Below removes bullet points for job tasks */
+ul {
+  list-style-type: none;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .techskillz {
+    display: none;
+  }
+
+  /* service {
+    display: none;
+  } */
+
+  #test {
+    margin-top: 50px;
+  }
+
+  .first {
+    height: 50%;
+  }
+
+  .second {
+    height: 50%;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .techskillz {
+    margin-bottom: 50px;
+  }
+
+  .first {
+    height: 50%;
+  }
+
+  .second {
+    height: 50%;
+  }
+}
+
+/* Overline decoration starts to look weird beyond 960 px, below is to remove at specific size */
+@media only screen and (max-width: 960px) {
+  /* Class to add overline text decoration */
+  .line {
+    text-decoration: none;
+  }
+  /* Grand Circus Education */
+  .first {
+    border-top: 1px #303030 solid;
+  }
+
+  /* Work */
+  #InformaIntel {
+    border-top: 1px #303030 solid;
+  }
 }

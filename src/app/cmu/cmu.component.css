@@ -3,3 +3,314 @@
   text-align: center;
   height: 150px;
 } */
+
+/* .outerbody {
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+} */
+/* 
+.sidebar {
+  height: 1250px;
+  position: absolute;
+  z-index: 1;
+  writing-mode: vertical-rl;
+  text-orientation: mixed; */
+/* background-color: #16e0bd; */
+/* width: auto;
+  font-size: 3em; */
+/* margin-top: 2em; */
+/* margin-left: 100px; */
+/* padding-top: 5%; */
+/* padding-bottom: 10%; */
+/* float: left; */
+/* display: flex;
+} */
+
+/* "Technology Skills" in sidebar*/
+/* 
+#zero {
+  height: 33.33%;
+} */
+/* "Education" in sidebar */
+/* #one {
+  height: 33.33%;
+} */
+
+/* "Work Experience" in sidebar */
+/* #two {
+  height: 33.33%;
+  display: inline-block;
+  vertical-align: top;
+} */
+
+/* Info on tech skills through work experience */
+body {
+  width: 100vw;
+  text-align: center;
+  margin: auto;
+  font-family: "PT Serif", serif;
+  /* z-index: -1; */
+  height: 100%;
+  /* border: 1px solid #16e0bd;
+  box-shadow: #303030; */
+}
+
+/* For "Tech Skills" */
+/* section { */
+/* padding: 5em 2em; */
+/* width: 100%; */
+/* position: relative; */
+/* } */
+/* Tech skills section in body */
+/* Tech skills for media queries - auto */
+.techskillz {
+  background-color: #fff;
+  /* background-size: cover; */
+  color: #303030;
+  text-align: center;
+  margin: auto;
+  font-family: "PT Serif", serif;
+  box-sizing: border-box;
+  display: block;
+  border-top: 1px #303030 solid;
+  height: 200px;
+  padding-top: 10px;
+  width: 50%;
+}
+
+/* #box {
+  height: 10px;
+  width: 10px;
+  background-color: green; */
+/* float: left; */
+/* } */
+/* Individual columns within tech skills section */
+.service {
+  float: left;
+  width: 33.33%;
+  padding-bottom: 50px;
+}
+
+/* Grand Circus education */
+/* For Media Queries, try auto for height */
+.first {
+  height: 400px;
+  width: 50%;
+  margin: auto;
+  text-align: center;
+  /* padding-top: 10%; */
+  /* overflow: scroll; */
+}
+
+/* CEntral Michigan education */
+.second {
+  height: 200px;
+  width: 50%;
+  margin: auto;
+  text-align: center;
+  /* padding-top: 20%; */
+}
+
+/* no listed style type for job tasks */
+ul {
+  list-style-type: none;
+}
+
+/* Section below is for original "Work Experience" titles, not being used as there is a sidebar */
+h1 {
+  height: 50px;
+  width: 50vw;
+  color: #303030;
+  text-decoration: underline #16e0bd;
+  width: 50%;
+  margin: auto;
+  margin-bottom: 20%;
+}
+
+/* Individual job titles in "work experience" */
+h3 {
+  width: 50%;
+  margin: auto;
+  color: #303030;
+  background-color: #fff;
+}
+
+li {
+  width: 50%;
+  margin: auto;
+}
+
+/* Class to add overline text decoration */
+.line {
+  text-decoration: overline;
+}
+
+@media only screen and (min-width: 200px) {
+  /* .sidebar {
+    height: 300%;
+    width: auto;
+  }
+
+  h4 {
+    padding: 5%;
+  }
+  #one {
+    padding-top: 12em;
+  }
+  #two {
+    padding-top: 15em;
+  } */
+
+  .techskillz {
+    margin-bottom: 50px;
+  }
+
+  .service {
+    float: center;
+    width: 100%;
+    padding-bottom: 50px;
+  }
+
+  .first {
+    margin-top: 15%;
+    /* height: 50%; */
+  }
+
+  .second {
+    /* height: 50%; */
+  }
+
+  #InformaIntel {
+    margin-top: 15%;
+  }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  /* .sidebar {
+    height: 300%;
+    width: auto;
+  }
+
+  #one {
+    padding-top: 12em;
+  }
+  #two {
+    padding-top: 15em;
+  } */
+
+  .techskillz {
+    margin-bottom: 50px;
+  }
+  .first {
+    height: 50%;
+  }
+
+  .second {
+    height: 50%;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  /* .sidebar {
+    height: 600px;
+    width: auto;
+  }
+
+  #one {
+    padding-top: 6em;
+  }
+  #two {
+    padding-top: 10em;
+  } */
+
+  .techskillz {
+    margin-bottom: 50px;
+  }
+
+  .first {
+    height: 50%;
+  }
+
+  .second {
+    height: 50%;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  /* .sidebar {
+    height: 768px;
+    width: auto;
+  }
+
+  #one {
+    padding-top: 6em;
+  }
+  #two {
+    padding-top: 10em;
+  } */
+
+  .techskillz {
+    margin-bottom: 50px;
+  }
+
+  .first {
+    height: 50%;
+  }
+
+  .second {
+    height: 50%;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  /* .sidebar {
+    height: 992px;
+    width: auto;
+  }
+
+  #one {
+    padding-top: 6em;
+  }
+  #two {
+    padding-top: 10em;
+  } */
+
+  .techskillz {
+    margin-bottom: 50px;
+  }
+
+  .first {
+    height: 50%;
+  }
+
+  .second {
+    height: 50%;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  /* .sidebar {
+    height: 1200px;
+    width: auto;
+  } */
+  .techskillz {
+    margin-bottom: 50px;
+  }
+  body {
+    height: 100%;
+  }
+
+  /* #one {
+    padding-top: 6em;
+  }
+  #two { */
+  /* padding-top: 8em; */
+  /* flex-grow: 2;
+  } */
+}

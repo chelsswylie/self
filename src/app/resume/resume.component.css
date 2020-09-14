@@ -1,66 +1,23 @@
-/* Built design already based off of body, added outerbody to do z index with side bar */
-.outerbody {
-  width: 100%;
-  height: 100%;
-  background-color: #fff;
-}
-
-.sidebar {
-  /* width: 100%; */
-  height: 50em;
-  position: absolute;
-  writing-mode: vertical-rl;
-  text-orientation: mixed;
-  z-index: 1;
-  background-color: #16e0bd;
-  width: 8%;
-  font-size: 3em;
-  margin-top: 1em;
-  margin-left: 10%;
-  padding-top: 5%;
-  padding-bottom: 5%;
-  display: flex;
-}
-
-#one {
-  padding-top: 4em;
-}
-#two {
-  padding-top: 2em;
-}
-
 body {
-  padding-top: 8%;
-  /* padding-bottom: 5%; */
-  width: 50vw;
+  width: 100vw;
   text-align: center;
-  /* margin: auto; */
+  margin: auto;
   font-family: "PT Serif", serif;
-  z-index: -1;
   height: 100%;
-  /* border: 1px solid #16e0bd;
-  box-shadow: #303030; */
+  color: #303030;
 }
 
-section {
-  /* padding: 5em 2em; */
-  width: 100%;
-  /* position: relative; */
-}
 .techskillz {
   background-color: #fff;
-  /* background-size: cover; */
-  color: #303030;
   text-align: center;
+  margin: auto;
   font-family: "PT Serif", serif;
   box-sizing: border-box;
   display: block;
-  /* font-size: 1rem; */
-  /* line-height: 1; */
-  /* position: relative; */
   border-top: 1px #303030 solid;
-  height: auto;
-  width: 100%;
+  height: 200px;
+  padding-top: 10px;
+  width: 50%;
 }
 
 .service {
@@ -69,193 +26,141 @@ section {
   padding-bottom: 50px;
 }
 
+/* Grand Circus Education */
 .first {
-  height: 15%;
-  width: 100%;
+  height: 400px;
+  border-top: 1px #303030 solid;
+  width: 50%;
+  margin: auto;
   text-align: center;
-  /* overflow: scroll; */
+  /* padding-top: 5%; */
+  margin-bottom: 5%;
 }
 
+/* CMU Education */
 .second {
-  height: 15%;
-  width: 100%;
+  height: 200px;
+  width: 50%;
+  margin: auto;
+  text-align: center;
+  /* margin-top: 15%; */
+  padding-bottom: 5%;
+  border-top: 1px #303030 solid;
+}
+
+/* For sub-titles like Tech Skils, Education, Work Experience */
+h1 {
+  height: 50px;
+  color: #303030;
+  text-decoration: underline #16e0bd;
+  width: 50%;
+  margin: auto;
+  padding-top: 1%;
+  /* padding-bottom: 1%; */
+}
+
+.projects {
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+
+#InformaIntel {
+  width: 50%;
+  margin: auto;
+  border-top: 1px #303030 solid;
+}
+
+#Wards {
+  width: 50%;
+  margin: auto;
+  border-top: 1px #303030 solid;
+}
+
+#DearbornSOM {
+  width: 50%;
+  margin: auto;
+  border-top: 1px #303030 solid;
+}
+/* Individual job titles in "work experience"/colleges */
+h3 {
+  width: 50%;
+  margin: auto;
+  /* margin-top: 2%; */
+  color: #303030;
+  background-color: #fff;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+
+/* Centers job tasks list */
+li {
+  width: 50%;
+  margin: auto;
   text-align: center;
 }
 
+/* Below removes bullet points for job tasks */
 ul {
   list-style-type: none;
 }
 
-h1 {
-  height: 50px;
-  width: 50vw;
-  /* background-color: #16e0bd; */
-  color: #303030;
-  text-decoration: underline #16e0bd;
-}
-
-h3 {
-  width: 100%;
-  color: #303030;
-  background-color: #fff;
-}
-
-.line {
-  text-decoration: overline;
-}
-/* 
-@media only screen and (max-width: 360px) {
-  .sidebar {
-    height: 300%;
-    width: auto;
-  }
-
-  h4 {
-    padding: 5%;
-  }
-  #one {
-    padding-top: 12em;
-  }
-  #two {
-    padding-top: 15em;
-  }
-
-  .techskillz {
-    margin-bottom: 50px;
-  }
-  body {
-    margin-left: 40%;
-  }
-} */
-
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-  .sidebar {
-    height: 300%;
-    width: auto;
-  }
-
-  #one {
-    padding-top: 12em;
-  }
-  #two {
-    padding-top: 15em;
-  }
-
   .techskillz {
+    height: 650px;
+  }
+
+  .service {
+    float: center;
+    width: 100%;
+    padding-bottom: 50px;
+  }
+
+  h1 {
     margin-bottom: 50px;
   }
-  body {
-    margin-left: 40%;
+
+  /* #test {
+    margin-top: 50px;
+  } */
+
+  .first {
+    height: 50%;
+  }
+
+  .second {
+    height: 50%;
   }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-  .sidebar {
-    height: 300%;
-    width: auto;
-  }
-
-  #one {
-    padding-top: 9em;
-  }
-  #two {
-    padding-top: 12em;
-  }
-
   .techskillz {
     margin-bottom: 50px;
   }
-  body {
-    margin-left: 30%;
+
+  .first {
+    height: 50%;
+  }
+
+  .second {
+    height: 50%;
   }
 }
 
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-  .sidebar {
-    height: 250%;
-    width: auto;
+/* Overline decoration starts to look weird beyond 960 px, below is to remove at specific size */
+@media only screen and (max-width: 960px) {
+  /* Class to add overline text decoration */
+  .line {
+    text-decoration: none;
+  }
+  /* Grand Circus Education */
+  .first {
+    border-top: 1px #303030 solid;
   }
 
-  #one {
-    padding-top: 6em;
-  }
-  #two {
-    padding-top: 9em;
-  }
-
-  .techskillz {
-    margin-bottom: 50px;
-  }
-  body {
-    margin-left: 30%;
-  }
-}
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-  .sidebar {
-    height: 200%;
-    width: auto;
-  }
-
-  #one {
-    padding-top: 6em;
-  }
-  #two {
-    padding-top: 9em;
-  }
-
-  .techskillz {
-    margin-bottom: 50px;
-  }
-  /* body {
-    margin-left: 30%;
-  } */
-}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-  .sidebar {
-    height: 185%;
-    width: auto;
-  }
-
-  #one {
-    padding-top: 6em;
-  }
-  #two {
-    padding-top: 9em;
-  }
-
-  .techskillz {
-    margin-bottom: 50px;
-  }
-}
-
-@media only screen and (min-width: 1350px) {
-  .sidebar {
-    height: 185%;
-    width: auto;
-  }
-
-  #one {
-    padding-top: 6em;
-  }
-  #two {
-    padding-top: 6em;
-  }
-
-  .techskillz {
-    margin-bottom: 50px;
-  }
-}
-
-@media only screen and (min-width: 1500px) {
-  .sidebar {
-    height: 165%;
-    width: auto;
+  /* Work */
+  #InformaIntel {
+    border-top: 1px #303030 solid;
   }
 }
