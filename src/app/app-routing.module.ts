@@ -4,7 +4,7 @@ import { Routes, RouterModule, ExtraOptions } from '@angular/router';
 import { CMUComponent } from './cmu/cmu.component';
 import { ResumeComponent } from './resume/resume.component';
 import { GrandCircusComponent } from './grand-circus/grand-circus.component';
-import { ReferencesComponent } from './references/references.component';
+// import { ReferencesComponent } from './references/references.component';
 import { AboutMeComponent } from './about-me/about-me.component';
 
 const routerOptions: ExtraOptions = {
@@ -18,7 +18,7 @@ const routes: Routes = [
   { path: 'AboutMe', component: AboutMeComponent },
   { path: 'CMU', component: CMUComponent },
   { path: 'Grand Circus', component: GrandCircusComponent },
-  { path: 'References', component: ReferencesComponent },
+  // { path: 'References', component: ReferencesComponent },
   { path: 'Resume', component: ResumeComponent },
 ];
 
