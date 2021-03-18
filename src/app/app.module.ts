@@ -9,6 +9,7 @@ import { CMUComponent } from './cmu/cmu.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { AppRoutingModule } from './app-routing.module';
 import { AboutMeComponent } from './about-me/about-me.component';
+import { ProjectsComponent } from './projects/projects.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { AboutMeComponent } from './about-me/about-me.component';
     CMUComponent,
     NavbarComponent,
     AboutMeComponent,
+    ProjectsComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],

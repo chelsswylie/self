@@ -6,6 +6,7 @@ import { ResumeComponent } from './resume/resume.component';
 import { GrandCircusComponent } from './grand-circus/grand-circus.component';
 // import { ReferencesComponent } from './references/references.component';
 import { AboutMeComponent } from './about-me/about-me.component';
+import { ProjectsComponent } from './projects/projects.component';
 
 const routerOptions: ExtraOptions = {
   scrollPositionRestoration: 'enabled',
@@ -20,6 +21,7 @@ const routes: Routes = [
   { path: 'Grand Circus', component: GrandCircusComponent },
   // { path: 'References', component: ReferencesComponent },
   { path: 'Resume', component: ResumeComponent },
+  { path: 'Projects', component: ProjectsComponent },
 ];
 
 @NgModule({

@@ -62,7 +62,6 @@ h1,
 h2,
 h3 {
   line-height: 1.1;
-  margin: 0;
 }
 
 h1 {
@@ -97,7 +96,8 @@ h3 {
 .section__subtitle--my-resume {
   background-color: #16e0bd;
   margin-bottom: 1em;
-  padding: 0.25em 1em;
+  text-align: center;
+  /* padding: 0.25em 1em; */
 }
 
 /* header */
@@ -115,11 +115,11 @@ nav {
 
 .my-resume {
   background-color: #303030;
-  /* background-image: url(../../assets/stockphotowebdev.jpg) */
-  /* background-size: cover; */
   color: #fff;
   text-align: center;
+  vertical-align: text-bottom;
   width: 100vw;
+  height: 40vh;
 }
 
 .section__subtitle--my-resume {
@@ -129,8 +129,8 @@ nav {
 
 .service {
   float: left;
-  width: 33.33%;
-  padding: 10px;
+  width: 50%;
+  /* padding: 10px; */
 }
 
 .section__subtitle--my-resume::after {
