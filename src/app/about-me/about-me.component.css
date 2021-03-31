@@ -1,191 +1,124 @@
-/* header {
-  height: 10%;
-  width: 100%;
-  text-align: center;
-}
-
 body {
-  font-family: "PT Serif", serif;
-} */
-
-ul {
-  list-style-type: none;
-}
-
-li {
-  display: inline;
-  margin: 5px;
-}
-
-header {
-  height: 50px;
+  background-color: #333;
+  height: 100vh;
   width: 100vw;
-  text-align: center;
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-/* General styles */
-
-body {
-  background: #fff;
-  color: #303030;
-  margin: 0;
   font-family: "PT Serif", serif;
-  font-size: 1rem;
-  line-height: 1.6;
-}
-/* For all "sections" */
-section {
-  padding: 5em 2em;
-  width: 100vw;
-  /* position: relative;
-  z-index: 1; */
+  color: white;
 }
 
-/* For all images */
 img {
-  display: block;
-  width: 300px;
-  max-width: 100%;
+  height: 100%;
+  width: 33vw;
+  margin: auto;
+  /* border: solid red; */
+  position: absolute;
+  z-index: 1;
+  top: 10;
+  padding-left: 33.3%;
+  /* margin-top: 10%; */
 }
 
-strong {
-  font-weight: 900;
-}
-/* Typography */
-h1,
-h2,
-h3 {
-  line-height: 1.1;
-}
-
-h1 {
-  font-size: 4.5rem;
-}
-h2 {
-  font-size: 3.75rem;
-}
-h3 {
-  font-size: 1.125rem;
-}
-
-.section__title {
-  margin-bottom: 0.25em;
-}
-
-.section__title--intro {
-  font-weight: 300;
-}
-
-.section__title--intro strong {
-  display: block;
-}
-
-.section__subtitle {
-  margin: 0;
-  font-size: 1.125rem;
-  font-family: "PT Sans", sans-serif;
-}
-
-.section__subtitle--intro,
-.section__subtitle--my-resume {
-  background-color: #16e0bd;
-  margin-bottom: 1em;
+/* Hi I am Chelsea Wylie section */
+.pageSplitLeft {
+  background-color: #333;
+  /* border: solid green; */
+  height: 100%;
+  width: 33vw;
+  color: white;
+  /* background-color: red; */
   text-align: center;
-  /* padding: 0.25em 1em; */
+  position: absolute;
+  z-index: 2;
+  /* left: 10; */
+  top: 22%;
 }
 
-/* header */
-
-nav {
-  display: none;
+/* For links to GitHub etc. */
+li {
+  list-style-type: none;
+  text-align: center;
 }
-/* Intro section */
 
-.intro {
+/* Section w/ links to GitHub LinkedIn and Contact */
+.pageSplitRight {
+  background-color: #333;
+  /* border: solid red; */
+  height: 100%;
+  width: 33vw;
+  /* background-color: green; */
+  position: absolute;
+  z-index: 1;
+  /* left: 10; */
+  top: 22%;
+  margin-left: 66.6%;
+  text-align: center;
+  /* margin: auto; */
+  /* padding-bottom: -2%; */
+}
+
+/* h1 {
+  height: 25vh;
+  width: 33.3vw;
   position: relative;
+  top: 20%;
+  position: absolute;
+  z-index: 1;
+} */
+.svg-wrapper {
+  height: 200px;
+  width: 33.3vw;
+  /* background-color: green; */
+  /* margin: 0 auto; */
+  position: relative;
+  top: 20%;
+  transform: translateY(-50%);
+  /* width: 320px; */
 }
 
-/* My Services section */
+.shape {
+  fill: transparent;
+  stroke-dasharray: 140 540;
+  stroke-dashoffset: -474;
+  stroke-width: 8px;
+  stroke: #19f6e8;
+}
 
-.my-resume {
-  background-color: #303030;
+a {
   color: #fff;
-  text-align: center;
-  vertical-align: text-bottom;
-  width: 100vw;
-  height: 40vh;
-}
-
-.section__subtitle--my-resume {
-  color: #16e0bd;
+  font-family: "Roboto Condensed";
+  font-size: 22px;
+  letter-spacing: 8px;
+  line-height: 32px;
   position: relative;
+  top: -60px;
+  text-decoration: none;
 }
 
-.service {
-  float: left;
-  width: 50%;
-  /* padding: 10px; */
+.Info {
+  color: #fff;
+  font-family: "Roboto Condensed";
+  font-size: 22px;
+  letter-spacing: 8px;
+  line-height: 32px;
+  position: relative;
+  top: -60px;
+  text-decoration: none;
 }
 
-.section__subtitle--my-resume::after {
-  content: "";
-  display: block;
-  width: 25%;
-  height: 1px;
-  margin: 0.5em auto 1em;
-  background-color: #fff;
-}
-
-@media (min-width: 600px) {
-  .intro {
-    display: grid;
-    width: min-content;
-    margin: 0 auto;
-    grid-template-areas:
-      "img title"
-      "img subtitle";
-    grid-template-columns: min-content max-content;
+@keyframes draw {
+  0% {
+    stroke-dasharray: 140 540;
+    stroke-dashoffset: -474;
+    stroke-width: 8px;
   }
-
-  .intro__img {
-    grid-area: img;
-    min-width: 250px;
-    position: relative;
-    z-index: 2;
-  }
-
-  .section__subtitle--intro {
-    align-self: start;
-    grid-column: -1/1;
-    grid-row: 2;
-    text-align: left;
-    /* position: absolute;
-    z-index: -1; */
-    position: relative;
-    left: -1.5em;
-    width: calc(100% + 1.5em);
-    /* display: flex;
-    justify-content: space-around; */
+  100% {
+    stroke-dasharray: 760;
+    stroke-dashoffset: 0;
+    stroke-width: 2px;
   }
 }
 
-@media (max-width: 800px) {
-  #Resume {
-    height: 400px;
-  }
-
-  li {
-    display: block;
-  }
-  header {
-    /* height: 50px; */
-    width: 100vw;
-    text-align: center;
-  }
+.svg-wrapper:hover .shape {
+  -webkit-animation: 0.5s draw linear forwards;
+  animation: 0.5s draw linear forwards;
 }

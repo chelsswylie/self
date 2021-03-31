@@ -7,6 +7,7 @@ import { GrandCircusComponent } from './grand-circus/grand-circus.component';
 // import { ReferencesComponent } from './references/references.component';
 import { AboutMeComponent } from './about-me/about-me.component';
 import { ProjectsComponent } from './projects/projects.component';
+import { HomeComponent } from './home/home.component';
 
 const routerOptions: ExtraOptions = {
   scrollPositionRestoration: 'enabled',
