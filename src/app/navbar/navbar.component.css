@@ -1,7 +1,7 @@
 html,
 body {
   background: #333;
-  height: 20vh;
+  height: 25vh;
   width: 100vw;
   overflow: hidden;
   text-align: center;
@@ -34,7 +34,7 @@ li {
 a {
   color: #fff;
   font-family: "Roboto Condensed";
-  font-size: 22px;
+  font-size: 2em;
   letter-spacing: 8px;
   /* line-height: 32px; */
   position: relative;
@@ -288,7 +288,7 @@ li {
 
 /* Hamburger */
 
-/* .mobile__menu {
+.mobile__menu {
   display: none;
 }
 
@@ -319,12 +319,12 @@ li {
 #toggle:checked + .hamburger .hamburger__top {
   transform: rotate(-45deg);
   margin-top: 17.5px; /* Half the size of hamburger height */
-/* }
+}
 
 #toggle:checked + .hamburger .hamburger__meat {
   transform: rotate(45deg);
   margin-top: -3px; /* Negative value of hamburger div height */
-/* }
+}
 
 #toggle:checked + .hamburger .hamburger__bottom {
   transform: scale(0);
@@ -332,9 +332,9 @@ li {
 
 #toggle:checked + .hamburger + .hamburger__nav {
   top: 0;
-} */
+}
 
-/* .hamburger__nav {
+.hamburger__nav {
   position: fixed;
   z-index: 4;
   width: 100%;
@@ -351,9 +351,9 @@ li {
 .hamburger__nav .hamburger__nav--wrapper {
   position: relative;
   overflow-y: auto;
-  height: 100%; 
-}  */
-/* 
+  height: 100%;
+}
+
 .hamburger__nav--items {
   height: 100vh;
   display: flex;
@@ -365,12 +365,12 @@ li {
 
 .hamburger__nav--items a {
   margin-top: 40px;
-  color: #16e0bd;
+  color: white;
   opacity: 0;
   text-decoration: none;
   font-size: 46px;
   letter-spacing: 3px;
-  transition: all 0.3s ease 0s;
+  text-align: center;
 }
 
 .hamburger__nav--items a:first-child {
@@ -384,17 +384,42 @@ li {
 .hamburger__nav--wrapper nav a:hover {
   opacity: 1;
   color: #fff;
-} */
+}
 
-/* @media screen and (max-width: 640px) and (min-width: 100px) {
-  .mobile__menu {
-    display: inherit;
+@media screen and (max-width: 600px) and (min-width: 100px) {
+  html,
+  body {
+    background: white;
+    height: 20vh;
+    width: 100vw;
+    overflow: hidden;
+    text-align: center;
   }
-  .nav-links-1 {
+
+  .mobile__menu {
+    display: contents;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+  }
+
+  .svg-wrapper {
     display: none;
   }
-  .nav-section {
-    height: 70px;
-    width: 100%;
+
+  li {
+    list-style-type: none;
+    display: inline;
   }
-} */
+
+  a {
+    color: #fff;
+    font-family: "Roboto Condensed";
+    font-size: 2em;
+    letter-spacing: 8px;
+    /* line-height: 32px; */
+    position: relative;
+    top: -60px;
+    text-decoration: none;
+  }
+}
