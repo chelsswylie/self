@@ -8,11 +8,15 @@ body {
 
 .image {
   background-color: #333;
+  height: 100%;
+  width: 100%;
+  /* height: 90vh;
+  width: 25vw; */
 }
 img {
   background-color: #333;
-  height: 90vh;
-  width: 34vw;
+  height: 80vh;
+  width: 25vw;
   /* margin: auto; */
   /* border: solid red; */
   position: absolute;
@@ -20,7 +24,7 @@ img {
   /* top: -9;
   padding-left: 33.3%; */
   /* margin-top: 10%; */
-  margin-left: 33%;
+  margin-left: 40%;
   top: 25%;
 }
 
@@ -29,7 +33,7 @@ img {
   background-color: #333;
   /* border: solid green; */
   height: 100vh;
-  width: 33vw;
+  width: 40vw;
   color: white;
   /* background-color: red; */
   text-align: center;
@@ -50,13 +54,13 @@ li {
   background-color: #333;
   /* border: solid red; */
   height: 100%;
-  width: 33vw;
+  width: 40vw;
   /* background-color: green; */
   position: absolute;
   z-index: 1;
   /* left: 10; */
   top: 0;
-  margin-left: 200%;
+  margin-left: 150%;
   text-align: center;
   /* margin: auto; */
   /* padding-bottom: -2%; */
