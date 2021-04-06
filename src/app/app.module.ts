@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { ResumeComponent } from './resume/resume.component';
@@ -15,6 +16,7 @@ import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
+    HttpClientModule,
     AppComponent,
     ResumeComponent,
     GrandCircusComponent,
@@ -26,8 +28,8 @@ import { FooterComponent } from './footer/footer.component';
     HomeComponent,
     FooterComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule],
-  providers: [],
+  imports: [BrowserModule, AppRoutingModule, HttpClientModule],
+  providers: [HttpClientModule],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
