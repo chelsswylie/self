@@ -1,9 +1,12 @@
+@import "https://fonts.googleapis.com/css?family=Raleway";
+
 body {
   width: 100vw;
   text-align: center;
   margin: auto;
   padding-top: 10vh;
-  font-family: "PT Serif", serif;
+  font-family: Raleway;
+
   height: 100%;
   color: #303030;
 }
@@ -12,7 +15,7 @@ h1 {
   width: 100vw;
 }
 h2 {
-  text-decoration: underline #16e0bd;
+  text-decoration: underline #6d99eb;
 }
 
 /* .line {

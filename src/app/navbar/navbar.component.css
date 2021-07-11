@@ -1,425 +1,389 @@
+@import "https://fonts.googleapis.com/css?family=Raleway";
+
 html,
 body {
-  background: #333;
-  height: 25vh;
-  width: 100vw;
-  overflow: hidden;
-  text-align: center;
+  margin: 0px;
 }
 
-.svg-wrapper {
-  height: 60px;
-  width: 100vw;
-  /* background-color: green; */
+header h1 {
+  color: #aaa;
+  font-size: 40px;
+  font-weight: lighter;
+  margin-bottom: 5px;
+}
+
+div.container {
+  font-family: Raleway;
   margin: 0 auto;
-  position: relative;
-  top: 15%;
-  transform: translateY(-50%);
-  width: 320px;
+  padding: 8em 3em;
+  text-align: center;
 }
 
-.shape {
-  fill: transparent;
-  stroke-dasharray: 140 540;
-  stroke-dashoffset: -474;
-  stroke-width: 8px;
-  stroke: #19f6e8;
-}
-
-li {
-  list-style-type: none;
-  display: inline;
-}
-
-a {
+div.container a {
   color: #fff;
-  font-family: "Roboto Condensed";
-  font-size: 2em;
-  letter-spacing: 8px;
-  /* line-height: 32px; */
-  position: relative;
-  top: -60px;
   text-decoration: none;
-}
-
-/* .text {
-  display: inline;
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  z-index: 1;
-  top: 0;
-} */
-
-@keyframes draw {
-  0% {
-    stroke-dasharray: 140 540;
-    stroke-dashoffset: -474;
-    stroke-width: 8px;
-  }
-  100% {
-    stroke-dasharray: 760;
-    stroke-dashoffset: 0;
-    stroke-width: 2px;
-  }
-}
-
-.svg-wrapper:hover .shape {
-  -webkit-animation: 0.5s draw linear forwards;
-  animation: 0.5s draw linear forwards;
-}
-
-/* _________________ */
-
-/* 
-body {
-  width: 100vw;
-  height: 10vh;
-  background-color: rgb(56, 56, 56, 0.1); */
-/* background: repeating-linear-gradient(
-      45deg,
-      #666565 0%,
-      #444446 10%,
-      #e0d6d6 0%,
-      #e0d6d6 50%
-    )
-    0 / 15px 15px; */
-/* opacity: 0.2; */
-/* top: 0;
-  left: 0;
-  position: absolute;
+  font: 20px Raleway;
+  margin: 0px 10px;
+  padding: 10px 10px;
+  position: relative;
   z-index: 0;
-  font: "PT Serif", serif;
-} */
-
-/* This controls About Me, Resume, Project sections */
-/* ul {
-  width: 100vw;
-  height: 40vh;
-  text-align: center;
-  list-style-type: none;
-} */
-
-/*Neon*/
-/* p {
-  text-align: center;
-  font-size: 3em;
-  margin: 20px 0 0 0;
-  height: 100%;
-  display: inline;
-} */
-
-/* a {
-  margin: 5px;
-  text-decoration: none;
-  -webkit-transition: all 0.5s;
-  -moz-transition: all 0.5s;
-  transition: all 0.5s;
-} */
-
-/* p:nth-child(1) a {
-  color: #fff; */
-/* -webkit-animation: neon1 1.5s ease-in-out infinite alternate;
-  -moz-animation: neon1 1.5s ease-in-out infinite alternate;
-  animation: neon1 1.5s ease-in-out infinite alternate;
-}
-
-p:nth-child(1) a:hover {
-  color: rgba(86, 5, 235, 0.333);
-  -webkit-animation: none;
-  -moz-animation: none;
-  animation: none;
-}
-
-p:nth-child(2) a {
-  color: #fff;
-  -webkit-animation: neon1 1.5s ease-in-out infinite alternate;
-  -moz-animation: neon1 1.5s ease-in-out infinite alternate;
-  animation: neon1 1.5s ease-in-out infinite alternate;
-}
-
-p:nth-child(2) a:hover {
-  color: rgba(86, 5, 235, 0.333);
-  -webkit-animation: none;
-  -moz-animation: none;
-  animation: none;
-} */
-/* 
-p:nth-child(3) a {
-  color: #fff;
-  -webkit-animation: neon1 1.5s ease-in-out infinite alternate;
-  -moz-animation: neon1 1.5s ease-in-out infinite alternate;
-  animation: neon1 1.5s ease-in-out infinite alternate;
-}
-
-p:nth-child(3) a:hover {
-  color: rgba(86, 5, 235, 0.333);
-  -webkit-animation: none;
-  -moz-animation: none;
-  animation: none;
-}
-
-p a:hover {
-  color: #ffffff;
-}
-
-li {
-  display: inline;
-} */
-
-/*glow for webkit*/
-/* 
-@-webkit-keyframes neon1 {
-  from {
-    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff,
-      0 0 40px rgba(86, 5, 235, 0.333), 0 0 70px rgba(86, 5, 235, 0.333),
-      0 0 80px rgba(86, 5, 235, 0.333), 0 0 100px rgba(86, 5, 235, 0.333),
-      0 0 150px rgba(86, 5, 235, 0.333);
-  }
-  to {
-    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff,
-      0 0 20px rgba(86, 5, 235, 0.333), 0 0 35px rgba(86, 5, 235, 0.333),
-      0 0 40px rgba(86, 5, 235, 0.333), 0 0 50px rgba(86, 5, 235, 0.333),
-      0 0 75px rgba(86, 5, 235, 0.333);
-  }
-} */
-
-/*glow for mozilla*/
-/* 
-@-moz-keyframes neon1 {
-  from {
-    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff,
-      0 0 40px rgba(86, 5, 235, 0.333), 0 0 70px rgba(86, 5, 235, 0.333),
-      0 0 80px rgba(86, 5, 235, 0.333), 0 0 100px rgba(86, 5, 235, 0.333),
-      0 0 150px rgba(86, 5, 235, 0.333);
-  }
-  to {
-    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff,
-      0 0 20px rgba(86, 5, 235, 0.333), 0 0 35px rgba(86, 5, 235, 0.333),
-      0 0 40px rgba(86, 5, 235, 0.333), 0 0 50px rgba(86, 5, 235, 0.333),
-      0 0 75px rgba(86, 5, 235, 0.333);
-  }
-} */
-
-/*glow*/
-/* 
-@keyframes neon1 {
-  from {
-    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff,
-      0 0 40px rgba(86, 5, 235, 0.333), 0 0 70px rgba(86, 5, 235, 0.333),
-      0 0 80px rgba(86, 5, 235, 0.333), 0 0 100px rgba(86, 5, 235, 0.333),
-      0 0 150px rgba(86, 5, 235, 0.333);
-  }
-  to {
-    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff,
-      0 0 20px rgba(86, 5, 235, 0.333), 0 0 35px rgba(86, 5, 235, 0.333),
-      0 0 40px rgba(86, 5, 235, 0.333), 0 0 50px rgba(86, 5, 235, 0.333),
-      0 0 75px rgba(86, 5, 235, 0.333);
-  }
-} */
-
-/*REEEEEEEEEEESPONSIVE*/
-/* 
-@media (max-width: 650px) {
-  #container {
-    width: 100%;
-  }
-  p {
-    font-size: 3.5em;
-  }
-} */
-/* _________________________________________________ */
-/* li {
-  height: 33.3vh;
-} */
-
-/* head {
-  font-family: "PT Serif", serif;
-}
-.nav-section {
-  display: flex;
-  overflow: hidden;
-  /* position: relative; */
-/* height: 100px;
-}
-
-.nav-links-1 {
-  display: flex;
-  width: 100vw;
-  justify-content: center;
-  /* margin-left: 150px;
-  position: static; */
-/* }
-
-.nav-links-2 {
-  display: flex;
-  width: 100vw;
-  justify-content: center;
-}
-
-.nav-links-1 li {
-  list-style: none;
-  position: relative;
-}
-
-.nav-links-2 li {
-  list-style: none;
-  position: relative;
-}
-.nav-links-1 li a {
-  color: #303030;
-  display: block;
-  margin-top: 5px;
-  padding: 0 55px 0 55px;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-size: 20px;
-}
-.nav-links-2 li a {
-  color: #303030;
-  display: block;
-  /* margin-top: 50px; */
-/* padding: 0 55px 0 55px;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-size: 20px;
-  text-align: center;
-} */
-
-/* Hamburger */
-
-.mobile__menu {
-  display: none;
-}
-
-.hamburger {
-  position: absolute;
-  width: 35px;
-  height: 30px;
-  top: 14px;
-
-  right: 10%;
-  z-index: 5;
   cursor: pointer;
 }
-
-.hamburger div {
-  position: relative;
-  width: 35px;
-  height: 3px;
-  border-radius: 3px;
-  background-color: #303030;
-  margin-top: 10px;
+.brown {
+  background: #6d9eeb;
 }
 
-#toggle {
-  display: none;
-}
-
-#toggle:checked + .hamburger .hamburger__top {
-  transform: rotate(-45deg);
-  margin-top: 17.5px; /* Half the size of hamburger height */
-}
-
-#toggle:checked + .hamburger .hamburger__meat {
-  transform: rotate(45deg);
-  margin-top: -3px; /* Negative value of hamburger div height */
-}
-
-#toggle:checked + .hamburger .hamburger__bottom {
-  transform: scale(0);
-}
-
-#toggle:checked + .hamburger + .hamburger__nav {
-  top: 0;
-}
-
-.hamburger__nav {
-  position: fixed;
-  z-index: 4;
+/* Top and Bottom borders go out */
+div.topBotomBordersOut a:before,
+div.topBotomBordersOut a:after {
+  position: absolute;
+  left: 0px;
   width: 100%;
-  height: 100%;
-  background-color: #303030;
-  top: -100%;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  overflow: hidden;
-  transition: all 0.3s ease-in-out;
-}
-
-.hamburger__nav .hamburger__nav--wrapper {
-  position: relative;
-  overflow-y: auto;
-  height: 100%;
-}
-
-.hamburger__nav--items {
-  height: 100vh;
-  display: flex;
-  list-style: none;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.hamburger__nav--items a {
-  margin-top: 40px;
-  color: white;
+  height: 2px;
+  background: #fff;
+  content: "";
   opacity: 0;
-  text-decoration: none;
-  font-size: 46px;
-  letter-spacing: 3px;
-  text-align: center;
+  transition: all 0.3s;
 }
 
-.hamburger__nav--items a:first-child {
-  margin-top: 0;
+div.topBotomBordersOut a:before {
+  top: 0px;
+  transform: translateY(10px);
 }
 
-.hamburger__nav--wrapper nav a {
+div.topBotomBordersOut a:after {
+  bottom: 0px;
+  transform: translateY(-10px);
+}
+
+div.topBotomBordersOut a:hover:before,
+div.topBotomBordersOut a:hover:after {
   opacity: 1;
+  transform: translateY(0px);
 }
 
-.hamburger__nav--wrapper nav a:hover {
+/* Top and Bottom borders come in */
+div.topBotomBordersIn a:before,
+div.topBotomBordersIn a:after {
+  position: absolute;
+  left: 0px;
+  width: 100%;
+  height: 2px;
+  background: #fff;
+  content: "";
+  opacity: 0;
+  transition: all 0.3s;
+}
+
+div.topBotomBordersIn a:before {
+  top: 0px;
+  transform: translateY(-10px);
+}
+
+div.topBotomBordersIn a:after {
+  bottom: 0px;
+  transform: translateY(10px);
+}
+
+div.topBotomBordersIn a:hover:before,
+div.topBotomBordersIn a:hover:after {
   opacity: 1;
+  transform: translateY(0px);
+}
+
+/* Top border go down and Left border appears */
+div.topLeftBorders a:before {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 2px;
+  height: 0px;
+  background: #fff;
+  content: "";
+  opacity: 1;
+  transition: all 0.3s;
+}
+
+div.topLeftBorders a:after {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 2px;
+  background: #fff;
+  content: "";
+  opacity: 1;
+  transition: all 0.3s;
+}
+
+div.topLeftBorders a:hover:before {
+  height: 100%;
+}
+
+div.topLeftBorders a:hover:after {
+  opacity: 0;
+  top: 100%;
+}
+
+/* Circle behind */
+div.circleBehind a:before,
+div.circleBehind a:after {
+  position: absolute;
+  top: 22px;
+  left: 50%;
+  width: 50px;
+  height: 50px;
+  border: 4px solid #0277bd;
+  transform: translateX(-50%) translateY(-50%) scale(0.8);
+  border-radius: 50%;
+  background: transparent;
+  content: "";
+  opacity: 0;
+  transition: all 0.3s;
+  z-index: -1;
+}
+
+div.circleBehind a:after {
+  border-width: 2px;
+  transition: all 0.4s;
+}
+
+div.circleBehind a:hover:before {
+  opacity: 1;
+  transform: translateX(-50%) translateY(-50%) scale(1);
+}
+
+div.circleBehind a:hover:after {
+  opacity: 1;
+  transform: translateX(-50%) translateY(-50%) scale(1.3);
+}
+
+/* Brackets go out */
+div.brackets a:before,
+div.brackets a:after {
+  position: absolute;
+  opacity: 0;
+  font-size: 35px;
+  top: 0px;
+  transition: all 0.3s;
+}
+
+div.brackets a:before {
+  content: "(";
+  left: 0px;
+  transform: translateX(10px);
+}
+
+div.brackets a:after {
+  content: ")";
+  right: 0px;
+  transform: translateX(-10px);
+}
+
+div.brackets a:hover:before,
+div.brackets a:hover:after {
+  opacity: 1;
+  transform: translateX(0px);
+}
+
+/* Border from Y to X  */
+div.borderYtoX a:before,
+div.borderYtoX a:after {
+  position: absolute;
+  opacity: 0.5;
+  height: 100%;
+  width: 2px;
+  content: "";
+  background: #fff;
+  transition: all 0.3s;
+}
+
+div.borderYtoX a:before {
+  left: 0px;
+  top: 0px;
+}
+
+div.borderYtoX a:after {
+  right: 0px;
+  bottom: 0px;
+}
+
+div.borderYtoX a:hover:before,
+div.borderYtoX a:hover:after {
+  opacity: 1;
+  height: 2px;
+  width: 100%;
+}
+
+/* Border X get width  */
+div.borderXwidth a:before,
+div.borderXwidth a:after {
+  position: absolute;
+  opacity: 0;
+  width: 0%;
+  height: 2px;
+  content: "";
+  background: #fff;
+  transition: all 0.3s;
+}
+
+div.borderXwidth a:before {
+  left: 0px;
+  top: 0px;
+}
+
+div.borderXwidth a:after {
+  right: 0px;
+  bottom: 0px;
+}
+
+div.borderXwidth a:hover:before,
+div.borderXwidth a:hover:after {
+  opacity: 1;
+  width: 100%;
+}
+
+/* Pull down  */
+div.pullDown a:before {
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  left: 0px;
+  top: 0px;
+  content: "";
+  background: #fff;
+  opacity: 0.3;
+  transition: all 0.3s;
+}
+
+div.pullDown a:hover:before {
+  height: 100%;
+}
+
+/* Pull up  */
+div.pullUp a:before {
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  left: 0px;
+  bottom: 0px;
+  content: "";
+  background: #fff;
+  opacity: 0.3;
+  transition: all 0.3s;
+}
+
+div.pullUp a:hover:before {
+  height: 100%;
+}
+
+/* Pull right  */
+div.pullRight a:before {
+  position: absolute;
+  width: 2px;
+  height: 100%;
+  left: 0px;
+  top: 0px;
+  content: "";
+  background: #fff;
+  opacity: 0.3;
+  transition: all 0.3s;
+}
+
+div.pullRight a:hover:before {
+  width: 100%;
+}
+
+/* Pull left  */
+div.pullLeft a:before {
+  position: absolute;
+  width: 2px;
+  height: 100%;
+  right: 0px;
+  top: 0px;
+  content: "";
+  background: #fff;
+  opacity: 0.3;
+  transition: all 0.3s;
+}
+
+div.pullLeft a:hover:before {
+  width: 100%;
+}
+
+/* Pull up and down  */
+div.pullUpDown a:before,
+div.pullUpDown a:after {
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  left: 0px;
+  content: "";
+  background: #fff;
+  opacity: 0.3;
+  transition: all 0.3s;
+}
+
+div.pullUpDown a:before {
+  top: 0px;
+}
+
+div.pullUpDown a:after {
+  bottom: 0px;
+}
+
+div.pullUpDown a:hover:before,
+div.pullUpDown a:hover:after {
+  height: 100%;
+}
+
+/* Pull right and left  */
+div.pullRightLeft a:before,
+div.pullRightLeft a:after {
+  position: absolute;
+  width: 2px;
+  height: 100%;
+  top: 0px;
+  content: "";
+  background: #fff;
+  opacity: 0.3;
+  transition: all 0.3s;
+}
+
+div.pullRightLeft a:before {
+  left: 0px;
+}
+
+div.pullRightLeft a:after {
+  right: 0px;
+}
+
+div.pullRightLeft a:hover:before,
+div.pullRightLeft a:hover:after {
+  width: 100%;
+}
+
+/* Highlight text out  */
+div.highlightTextOut a {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+div.highlightTextOut a:before,
+div.highlightTextIn a:before {
+  position: absolute;
   color: #fff;
+  top: 0px;
+  left: 0px;
+  padding: 10px;
+  overflow: hidden;
+  content: attr(alt);
+  transition: all 0.3s;
+  transform: scale(0.8);
+  opacity: 0;
 }
 
-@media screen and (max-width: 600px) and (min-width: 100px) {
-  html,
-  body {
-    background: white;
-    height: 20vh;
-    width: 100vw;
-    overflow: hidden;
-    text-align: center;
-  }
-
-  .mobile__menu {
-    display: contents;
-    height: 100%;
-    width: 100%;
-    text-align: center;
-  }
-
-  .svg-wrapper {
-    display: none;
-  }
-
-  li {
-    list-style-type: none;
-    display: inline;
-  }
-
-  a {
-    color: #fff;
-    font-family: "Roboto Condensed";
-    font-size: 2em;
-    letter-spacing: 8px;
-    /* line-height: 32px; */
-    position: relative;
-    top: -60px;
-    text-decoration: none;
-  }
+div.highlightTextOut a:hover:before,
+div.highlightTextIn a:hover:before {
+  transform: scale(1);
+  opacity: 1;
 }
