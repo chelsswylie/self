@@ -1,5 +1,24 @@
-<div class="container brown highlightTextOut">
-  <a alt="ABOUT ME" href="/AboutMe">ABOUT ME</a>
-  <a alt="RESUME" href="/Resume">RESUME</a>
-  <a alt="PORTFOLIO" href="/Projects">PORTFOLIO</a>
+<div class="container brown highlightTextOut" id="main">
+  <a class="route" alt="ABOUT ME" href="/AboutMe">ABOUT ME</a>
+  <a class="route" alt="RESUME" href="/Resume">RESUME</a>
+  <a class="route" alt="PORTFOLIO" href="/Projects">PORTFOLIO</a>
+</div>
+
+<div class="mobile__menu">
+  <input id="toggle" type="checkbox" />
+  <label class="hamburger" for="toggle">
+    <div class="hamburger__top"></div>
+    <div class="hamburger__meat"></div>
+    <div class="hamburger__bottom"></div>
+  </label>
+  <div class="hamburger__nav">
+    <div class="hamburger__nav--wrapper">
+      <nav class="hamburger__nav--items">
+        <li><a href="/AboutMe">ABOUT ME</a></li>
+        <li><a href="/Resume">RESUME</a></li>
+
+        <li><a href="/Projects">PORTFOLIO</a></li>
+      </nav>
+    </div>
+  </div>
 </div>
