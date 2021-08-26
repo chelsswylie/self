@@ -3,7 +3,7 @@
 body {
   width: 100vw;
   padding-top: 10vh;
-  text-align: center;
+  text-align: left;
   margin-left: auto;
   font-family: Raleway;
   height: 100vh;
@@ -19,10 +19,11 @@ body {
   font-family: Raleway;
   box-sizing: border-box;
   display: block;
-  border-top: 1px #303030 solid;
+  /* border-top: 1px #303030 solid; */
   height: 200px;
   padding-top: 10px;
-  width: 45%;
+  width: 100%;
+  margin-bottom: 5%;
 }
 
 /* This is the spacing for tech skills rows */
@@ -33,31 +34,25 @@ body {
 }
 
 /* This is the spacing for the Education section rows */
-.Education {
-  margin-top: 50px;
-  /* float: left; */
-  width: 100%;
+/* .Education {
+  margin-top: 50px; */
+/* float: left; */
+/* width: 100%;
   margin-bottom: 10%;
-}
-
-#CMU {
-  height: 100%;
-  width: 100%;
-  margin-top: -5%;
-  /* background-color: indigo; */
-}
+} */
 
 .Experience {
   width: 100%;
-  height: 100%;
-  margin-top: 300px;
+  height: 50%;
+  margin-bottom: 5%;
+  /* margin-top: 300px; */
   /* border-top: 1px #303030 solid; */
 }
 
 #line {
   height: 1px;
-  width: 45%;
-  margin-left: 28%;
+  width: 100%;
+  /* margin-left: 28%; */
   border-top: 1px #303030 solid;
 }
 p {
@@ -72,7 +67,7 @@ span {
   width: 33%;
   margin: auto;
   /* padding: 2em; */
-  text-align: center;
+  text-align: left;
   /* padding-bottom: 1%; */
 }
 
@@ -92,7 +87,7 @@ span {
   margin-top: 800px;
   height: auto;
   width: 100%;
-  text-align: center;
+  text-align: left;
   /* background-color: indigo; */
   padding-left: 0;
 }
@@ -111,10 +106,5 @@ span {
 li {
   width: 45%;
   margin: auto;
-  text-align: center;
-}
-
-/* Below removes bullet points for job tasks */
-ul {
-  list-style-type: square;
+  text-align: left;
 }
